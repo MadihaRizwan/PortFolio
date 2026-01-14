@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ======= NAVBAR ======= */
+.navbar {
+  background-color: lightgray;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 5px solid rgb(32, 67, 131);
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+.pages {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pages a {
+  color: rgb(32, 67, 131);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin: 8px 12px;
+}
+
+.pages button {
+  padding: 10px 15px;
+  background-color: rgb(228, 228, 72);
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* ======= HERO SECTION ======= */
+.container {
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(./assets/banner.avif) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.content {
+  max-width: 90%;
+  color: white;
+}
+
+.content h1 {
+  color: rgb(228, 228, 72);
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.content h3 {
+  margin: 10px 0;
+}
+
+.content p {
+  margin: 10px 0 20px;
+}
+
+.content button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: rgb(228, 228, 72);
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+/* ======= ABOUT ======= */
+.about {
+  padding: 50px 20px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-content-left img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.about-content-right {
+  max-width: 500px;
+}
+
+/* ======= EDUCATION ======= */
+.education {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: lightgray;
+}
+
+.education-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.education-left,
+.education-right {
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  transition: 0.5s;
+}
+
+.education-left:hover,
+.education-right:hover {
+  background-color: black;
+  color: white;
+}
+
+/* ======= SKILLS ======= */
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 20px;
+}
+
+.show-skills,
+.certification {
+  width: 100%;
+  max-width: 500px;
+  padding: 35px;
+  border-radius: 10px;
+}
+
+.show-skills {
+  background-color: darkgray;
+}
+
+.certification {
+  background-color: lightgray;
+}
+
+/* ======= GALLERY ======= */
+.gallery {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.all-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.all-images img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ======= FOOTER ======= */
+.footer {
+  background-color: rgb(228, 228, 72);
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-left a,
+.footer-right a {
+  color: black;
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.social {
+  background-color: lightgray;
+  padding: 10px;
+  text-align: center;
+}
+
+.fa-brands {
+  font-size: 28px;
+  margin: 5px;
+  color: black;
+}
+
+/* ======= RESPONSIVE DESIGN ======= */
+@media (max-width: 992px) {
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .content h3 {
+    font-size: 20px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pages {
+    flex-direction: column;
+  }
+
+  .container {
+    height: 70vh;
+  }
+
+  .education-content,
+  .skills {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 26px;
+  }
+
+  .content p {
+    font-size: 14px;
+  }
+
+  .pages a {
+    font-size: 16px;
+  }
+
+  .footer-left a,
+  .footer-right a {
+    font-size: 18px;
+  }
+
+  .fa-brands {
+    font-size: 24px;
+  }
+}
+/* ======= HERO SECTION ======= */
+.container {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(./assets/banner.avif) center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.content {
+  width: 100%;
+  max-width: 600px;
+  color: white;
+}
+
+.content h1 {
+  color: rgb(228, 228, 72);
+  font-size: clamp(1.8rem, 5vw, 2.5rem); /* auto scales */
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.content h3 {
+  font-size: clamp(1rem, 3.5vw, 1.4rem);
+  margin: 10px 0;
+}
+
+.content p {
+  font-size: clamp(0.9rem, 3vw, 1.1rem);
+  margin: 10px 0 20px;
+  line-height: 1.5;
+  color: #f1f1f1;
+}
+
+.content button {
+  margin: 10px;
+  padding: clamp(8px, 2vw, 12px) clamp(14px, 4vw, 24px);
+  background-color: rgb(228, 228, 72);
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  font-size: clamp(0.9rem, 3vw, 1rem);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.content button:hover {
+  background-color: rgb(255, 255, 100);
+  transform: scale(1.05);
+}
+
+/* ======= RESPONSIVE DESIGN ======= */
+@media (max-width: 992px) {
+  .container {
+    min-height: 75vh;
+    padding: 40px 20px;
+  }
+
+  .content {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .pages {
+    flex-direction: column;
+  }
+
+  .container {
+    min-height: 70vh;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+  }
+
+  .education-content,
+  .skills {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    min-height: 65vh;
+    padding: 30px 10px;
+  }
+
+  .content {
+    max-width: 95%;
+  }
+
+  .content button {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .fa-brands {
+    font-size: 24px;
+  }
+}
